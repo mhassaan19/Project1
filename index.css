@@ -1,0 +1,335 @@
+*{
+box-sizing: border-box;
+margin: 0%;
+padding: 0%;
+text-align: center;
+}
+header { 
+padding: 5px;
+}
+nav{
+display: flex;
+padding: 10px;
+background-color: darkcyan;
+flex-wrap: nowrap;
+justify-content: space-between;
+}
+nav img {
+width: 75px;
+height: 75px;
+border-radius:50%;
+border: 5px solid blue;
+}
+nav ul{
+list-style-type: none;
+align-items: center;
+display: flex;
+}
+nav li{
+margin-right: 35px
+}
+nav li>a{
+color: darkblue;
+padding: 10px;
+text-decoration: none;
+}
+nav li:hover {
+background-color: aqua;
+}
+nav h1{
+font-family: Arial, Helvetica, sans-serif;
+align-self: center;
+font-size: xx-large;
+color: darkmagenta;
+text-shadow: 5px 0px 5px palevioletred;
+}
+nav h1::selection{
+color: aqua;
+}
+nav #container{
+display: flex;
+flex-wrap: nowrap;
+}
+#button {
+display: none;
+}
+.button {
+text-decoration: none;
+align-self: center;
+text-align: center;
+white-space: none;
+margin-right: 30px;
+width: auto;
+height: 55%;
+background-color: blueviolet;
+padding: 7px;
+font-weight: bold;
+}
+.button:hover{
+background-color: violet;
+color: blueviolet;
+box-shadow: 5px 0px 5px pink;
+cursor:pointer;
+}
+#button{
+display: none;
+width: 15%;
+justify-content:center;
+background-color: lightskyblue; 
+}
+.clickable {
+background-color: blue;
+margin: 5%;
+width: 90%;
+height: 25%;
+}
+.clickable.open {
+background-color: aqua;
+}
+#showing {
+background-color: cadetblue;
+color: darkblue;
+font: icon;
+padding: 15px;
+}
+.art {
+display: block;
+flex-direction: column;
+width: 75%;
+}
+.art article{
+border: 5px solid peru;
+padding: 5px;
+margin: 5px;
+background-color: lightsalmon;
+}
+.art h3 {
+color: fuchsia;
+padding-bottom: 5px;
+}
+.art em, dt{
+font-size: large;
+color: crimson;
+}
+aside {
+position: absolute;
+width: 20%;
+right: 0%;
+bottom: -25%;
+padding: 5px;
+margin: 5px;
+background-color: orange;
+color: brown;
+}
+#showimg {
+margin: 15px;
+border: 15px ridge firebrick;
+width: 30%;
+}
+.fornbac{
+border: none;
+margin-top: 5%;
+font-size: larger;
+font-weight: bolder;
+width:100px;
+height: 100px;
+border-radius: 50%;
+color: red;
+background-color: cyan;
+padding: 5px;   
+}
+.fornbac:hover {
+background-color: green;
+text-shadow: 3px 0px 3px white;
+}
+footer{
+position: relative;
+bottom:0% ;
+text-align: center;
+background-color: grey;
+color: black;
+width: 100%;
+padding: 15px;
+}
+.dialog-container{
+display: none;
+position: fixed;
+top: 15%;
+left: 35%;
+background-color: gray;
+border: 15px ridge black;
+}
+.dialog{
+    margin: 5px;
+    padding: 5px;
+}
+.dialog h2 {
+    color: black;
+    text-shadow: 5px 0px 5px wheat;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+.dialog .bookbut{
+    background-color: white;
+    color:green;
+    border: none;
+    border-radius: 25%;
+    font-size: large;
+    font-weight: bolder;
+    padding: 5px;
+    cursor:pointer;
+}
+.dialog label,input {
+display: flex;
+padding: 5px;
+border-radius: 5%;
+}
+.dialog input:focus {
+    box-shadow: 5px 0px 5px green
+}
+.close {
+float: right;
+    background-color: white;
+    border: 3px solid green;
+    width: 45px;
+    margin: 5px;
+    padding: 5px;
+}
+/*for laptops, pad and tablet*/
+@media screen and (min-width:768px) and (max-width: 1023px){
+nav{
+justify-content:space-between;
+}
+nav img {
+width: 100px;
+height: 100px;
+}
+nav ul{
+display: table;
+align-self: center;      
+}
+nav li {
+margin: 3%;
+}
+nav #container{
+display: none;
+}
+nav #container.show {
+scale: 1.7;
+display: block;
+text-align: center;
+width: max-content;
+min-height: 10%;
+background-color: aqua;
+position: absolute;
+left: 85%;
+top: 15%;
+border: 2px solid blue;
+}
+.button {
+display: block;
+background-color: transparent;
+}
+.button:hover{
+background-color: transparent;
+box-shadow: none;
+}
+#button{
+display: block;
+}
+#showing {
+background-color: cadetblue;
+color: darkblue;
+font: icon;
+padding: 15px;
+}
+.art {
+width: 100%;
+}
+aside {
+position: relative;
+width: auto;
+}
+#showimg {
+margin: 15px;
+border: 15px ridge firebrick;
+width: 55%;
+}
+.fornbac{
+margin: 15% 5%;
+font-size: large;
+scale: 1.5; 
+}
+}
+
+/*for phone and smaller devices*/
+@media screen and (max-width:767px) {
+nav{
+justify-content:space-between;
+}
+nav img {
+width: 50px;
+height: 50px;
+border-radius:50%;
+border: 2px solid blue;
+}
+nav ul{
+display: block;
+}
+nav li {
+margin: 2%;
+border: 2px solid blue;
+}
+nav h1{
+font-size: x-large;   
+}
+nav #container{
+display: none;
+}
+nav #container.show {
+display: block;
+text-align: center;
+width: 25%;
+background-color: aqua;
+position: absolute;
+left: 75%;
+top: 7%;
+border: 2px solid blue;
+}
+.button {
+margin: 0%;
+transform: scale(0.7);
+background-color: transparent;
+}
+.button:hover{
+background-color: transparent;
+box-shadow: none;
+}
+#button{
+display: block;
+}
+#showing {
+background-color: cadetblue;
+color: darkblue;
+font: icon;
+padding: 15px;
+}
+.art {
+width: 100%;
+}
+aside {
+position: relative;
+width: auto;
+}
+#showimg {
+margin: 15px;
+border: 15px ridge firebrick;
+width: 55%;
+}
+.fornbac{
+margin: 15% 5%;
+font-size: large;
+width: 75%;
+height: 35px;  
+}
+}
