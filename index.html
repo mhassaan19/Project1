@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon&icon.avif" type="image/x-icon">
+<!--MARKETING ASSETS-->
+<meta name="og:image" content="favicon&icon.avif">
+<meta name="og:description" content="EXPERIENCE THE WORLD CLASS AND HELATH FOOD.">
+<meta name="keywords" content="Maziadar food, Tasty food, Delecious food, healthy food">
+<meta name="keywords" content="italian food, french food, best zinger burger, mcdonald, domino">
+<!--CSS-->
+<link rel="stylesheet" href="Restruant.css">
+<title>RESTRUANT</title>
+</head>
+<body>
+<header>
+<nav>
+<img src="favicon&icon.avif" alt="LOGO">
+<h1>BESTIES</h1>
+<div id="container">
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a onclick="openDialog()">BOOKING</a></li>
+</ul>
+<a class="button" href="void:(0)">SIGN-UP</a>
+<a class="button" href="void:(0)">SIGN-IN</a>
+</div>
+<div id="button" onclick="showtoggle()">
+<div class="clickable"></div>
+<div class="clickable"></div>
+<div class="clickable"></div>
+</div>
+</nav>
+</header>
+<!--dialog box for booking-->
+<div id="dialoger" class="dialog-container">
+<div class="dialog">
+<div style="cursor: pointer;" onclick="closeDialog()" class="close">&times;</div>
+<h2>BOOK YOUR SEAT NOW!</h2>
+<form method="get">
+<label for="Guardians">GUARDIANS:</label>
+<input type="text" id="Guardians"><br>
+<label for="seats">SEATS</label>
+<input id="seats" type="number" min="1" max="5"><br>
+<label for="date">DATE</label>
+<input id="date" type="date"><br>
+<button class="bookbut" onclick="alert('THIS IS JUST DEMO WEB')">BOOK</button>
+<button class="bookbut" onclick="closeDialog()">CLOSE</button>
+</form>
+</div>
+</div>
+<!--different-->
+<section>
+<div id="showing">
+<h2>BOOK YOUR SEAT AND GET BEST EATING EXPERIENCE!</h2>
+<p>This is the website to provide you the service of serve you the delecious and healthy food.
+Just book and take the benefits. 
+</p>
+</div>
+<div style="background-color: lightcoral; display: flex; justify-content: space-between;">
+<button class="fornbac" onclick="changeimg(-1)">&lt;</button>
+<img id="showimg" src="favicon&icon.avif" alt="sorry!">
+<button class="fornbac" onclick="changeimg(+1)">&gt;</button>
+</div>
+<div class="art">
+<article>
+<h3>BEST ITEMS:</h3>
+<em>
+Embark on a culinary journey with our unparalleled masterpiece, the 
+"Savory Symphony." Immerse yourself in a crescendo of flavors as perfectly seared
+prime rib dances harmoniously with truffle-infused mashed potatoes. Crowned with a
+reduction of aged balsamic and garnished with delicate microgreens, this symphony of
+taste will linger on your palate, creating a culinary symphony that resonates with 
+perfection.
+</em>
+</article><br>
+<article>
+<h3>TIMING:</h3>
+<i style="color: blue; font-size: large; padding: 3px;">Book your seat at night of friday or saturday and get 20%off on delicate dinner</i><br>
+<dl>
+<dt>MONDAY - THURSDAY</dt>
+<dd>11:00am TO 10:30pm</dd>
+<dt>FRIDAY - SATURDAY</dt>
+<dd>12:30pm TO 12:30am</dd>
+</dl>   
+</article>
+</div>
+<aside>
+<h3>DO YOU KNOW</h3>
+Dive into the depths of indulgence with our "Oceanic Bliss Platter." A tidal wave
+of ocean-fresh delicacies awaits, featuring succulent lobster tail, buttery Alaskan
+king crab legs, and plump jumbo shrimp. Grilled to perfection and accompanied by
+our secret citrus-infused dipping sauce, this platter is a celebration of the sea's
+bounty that will transport you to the sun-kissed shores with every tantalizing bite.
+</aside>
+</section>
+<footer>
+FOR MORE DETAILS: PLEASE CONTACT US:
+Ph:0300-*******;
+</footer>
+<!--JS-->
+<script src="Restruant.js"></script>
+</body>
+</html>
